@@ -1,15 +1,17 @@
-var collDect;
+var collDect = {};
 
 collDect.Point = function(x, y){
-    this.x = x;
-    this.y = y;
+    return {
+        x: x,
+        y: y
+    };
 };
 
 collDect.onSegment =function(p, q, r) { 
     // Given three colinear points p, q, r, the function checks if 
     // point q lies on line segment 'pr' 
-    if (q.x <= max(p.x, r.x) && q.x >= min(p.x, r.x) &&
-        q.y <= max(p.y, r.y) && q.y >= min(p.y, r.y))
+    if (q.x <= Math.max(p.x, r.x) && q.x >= Math.min(p.x, r.x) &&
+        q.y <= Math.max(p.y, r.y) && q.y >= Math.min(p.y, r.y))
         return true; 
     return false; 
 };
@@ -47,4 +49,4 @@ collDect.doIntersect = function(p1, q1, p2, q2) {
     if (o4 == 0 && collDect.onSegment(p2, q1, q2)) return true; 
   
     return false; // Doesn't fall in any of the above cases 
-} 
+};
