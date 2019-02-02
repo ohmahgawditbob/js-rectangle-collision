@@ -1,12 +1,3 @@
-var collDect = {};
-
-collDect.Point = function(x, y){
-    return {
-        x: x,
-        y: y
-    };
-};
-
 collDect.onSegment =function(p, q, r) { 
     // Given three colinear points p, q, r, the function checks if 
     // point q lies on line segment 'pr' 
@@ -24,7 +15,7 @@ collDect.orientation = function(p,q,r) {
     return (val > 0)? 1: 2; // clock or counterclock wise 
 };
 
-collDect.doIntersect = function(p1, q1, p2, q2) { 
+collDect.checkLineIntersect = function(p1, q1, p2, q2) { 
     // Find the four orientations needed for general and 
     // special cases 
     var o1 = collDect.orientation(p1, q1, p2); 
