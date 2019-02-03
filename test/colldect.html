@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<head>
+    <title>Test</title>
+    <script type="text/javascript" src="../../collision_detect/physics_structs.js"></script>
+    <script type="text/javascript" src="../../collision_detect/polygonCollision.js"></script>
+    <script type="text/javascript" src="../../collision_detect/lineIntersect.js"></script>
+</head>
+<body>
+    <h1>Hexagon | Triangle settings</h1>
+    <form>
+        <p>Hex0 <input type="number" value=40 min=0 id="hex0x" name="hex0x"/><input type="number" value=40 min=0 id="hex0y" name="hex0y"/> | Tri0 <input type="number" value=20 min=0 id="tri0x" name="tri0x"/><input type="number" value=20 min=0 id="tri0y" name="tri0y"/></p>
+        <p>Hex1 <input type="number" value=70 min=0 id="hex1x" name="hex1x"/><input type="number" value=40 min=0 id="hex1y" name="hex0y"/> | Tri1 <input type="number" value=20 min=0 id="tri1x" name="tri1x"/><input type="number" value=100 min=0 id="tri1y" name="tri1y"/></p>
+        <p>Hex2 <input type="number" value=100 min=0 id="hex2x" name="hex2x"/><input type="number" value=70 min=0 id="hex2y" name="hex0y"/> | Tri2 <input type="number" value=70 min=0 id="tri2x" name="tri2x"/><input type="number" value=100 min=0 id="tri2y" name="tri2y"/></p>
+        <p>Hex3 <input type="number" value=70 min=0 id="hex3x" name="hex3x"/><input type="number" value=120 min=0 id="hex3y" name="hex0y"/></p>
+        <p>Hex4 <input type="number" value=40 min=0 id="hex4x" name="hex4x"/><input type="number" value=120 min=0 id="hex4y" name="hex0y"/></p>
+        <p>Hex5 <input type="number" value=20 min=0 id="hex5x" name="hex5x"/><input type="number" value=70 min=0 id="hex5y" name="hex0y"/></p>
+    </form>
+    <p id="out">Overlap: false</p>
+    <canvas height=200 width=200 style="border:2px solid black;"></canvas>
+    <script type="text/javascript" src="test_Collision.js"></script>
+</body>
